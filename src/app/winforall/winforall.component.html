@@ -1,0 +1,55 @@
+<!--
+Crafted and Designed By DesignDrastic
+Author: DesignDrastic
+Author URL: http://designdrastic.com
+License URL: http://designdrastic.com/license
+-->
+<header>
+	<div class="headertop">
+		<div class="container">
+			<div class="location m-2">
+                <div class="navbar navbar-default navbar-fixed-top p-top-1">
+                    <div class="container">
+                      <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                      </div>
+                      <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                          <li><a  routerLink="/annonceurs" style="cursor: pointer; color: #20286d;font-weight: bold;" class="menuLink"  (click)="changescreen('/annonceurs')"> Accès annonceurs</a>
+  
+                          </li>
+                            <li><a routerLink="/winforall/connexion" style="cursor: pointer;color: #20286d;font-weight: bold" class="menuLink" (click)="changescreen('/connexion')">Connexion</a>
+                            </li>
+  
+                          <li><a routerLink="/winforall/inscription" style="cursor: pointer; color: #ff5f5a;font-weight: bold" class="menuLink u-animation" (click)="changescreen('/inscription')"> Inscription</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!--/.nav-collapse -->
+                    </div>
+                  </div>
+  
+            </div>
+		</div>
+    </div>
+	<div class="gc_home_header">
+		<div class="container"> 
+		<div class="logo">
+            <br>
+			<a href="index.html"><img src="../assets/test/images/win4all.png" alt=""></a>
+		</div>
+		<div class="headercalldiv">
+            <br>
+			<h4><i class="fa fa-phone"></i>+216 26027001</h4>
+		</div>
+	</div>
+  </div>
+</header>
+<div>
+  <router-outlet></router-outlet>
+</div>

@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-winforall',
+  templateUrl: './winforall.component.html',
+  styleUrls: ['./winforall.component.css']
 })
-export class AppComponent implements OnInit {
+export class WinforallComponent implements OnInit {
+
   constructor(private  activatedRout:Router){}
   routingValue=""
   ngOnInit(): void {
@@ -21,5 +22,3 @@ export class AppComponent implements OnInit {
  this.routingValue=e
   }
 }
-
-
